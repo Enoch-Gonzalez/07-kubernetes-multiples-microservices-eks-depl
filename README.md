@@ -57,7 +57,7 @@ To run this project, ensure the following prerequisites are met:
         cd auth-api
         ```
 
-       ```bash 
+        ```bash 
         docker build -t <DOCKERHUB_USERNAME>/auth-api .
         ```
 
@@ -195,11 +195,11 @@ To run this project, ensure the following prerequisites are met:
         http://<minikube-serivce-users-service>/login
         ```
 
-- This will throw a token. This will throw a token. Copy it.
+        **This will throw a token. Copy it.**
 
 13. Add tasks to your app.
 
-- Add tasks by adding a Header in Postman. This require authentication, add a Header and send a post Request:
+- Add tasks by adding a Header in Postman. This require authentication. Add a Header and send a post Request:
 
     ```
     Key: Authorization
@@ -367,7 +367,7 @@ Wait until the cluster is created.
     aws eks --region <enter-your-aws-region> update-kubeconfig --name kub-dep-demo
     ```
 
-- With this new configuration al the kubectl commands will run in inside your AWS EKS Cluster
+- With this new configuration all the kubectl commands will run in inside your AWS EKS Cluster
 
 4. Adding worker nodes
 
@@ -499,7 +499,7 @@ Before applying the YAML files, ensure to update them with your specific reposit
 
 Navigate to each `deployment.yaml` file in the `kubernetes` directory. Look for the `spec -> containers -> image` field in each file and replace `<DOCKERHUB_USERNAME>/<IMAGE_NAME>` placeholders with your Docker Hub username and chosen image names.
 
-Here's an example snippet of the YAML file where you should make the changes:
+- Here's an example snippet of the YAML file where you should make the changes:
 
     ```yaml
     spec:
